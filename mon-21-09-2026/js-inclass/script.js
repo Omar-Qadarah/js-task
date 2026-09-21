@@ -18,3 +18,4 @@ console.log("hello" + true);
 console.log(typeof (Infinity));
 console.log(1 == '1');
 console.log(1 === '1');
+
