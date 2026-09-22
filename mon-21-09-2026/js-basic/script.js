@@ -371,3 +371,38 @@ for (let i = 0; i < numberOfMeals; i++) {
 }
 
 console.log(meals);
+
+// Objects
+
+function getPropertyNames(obj) {
+  return Object.keys(obj);
+}
+
+function countProperties(obj) {
+  return Object.keys(obj).length;
+}
+
+function mergeObjects(obj1, obj2) {
+  return Object.assign({}, obj1, obj2);
+}
+
+function toUpperCaseValues(obj) {
+  const result = {};
+  for (let key in obj) {
+    result[key] = String(obj[key]).toUpperCase();
+  }
+  return result;
+}
+function removeNullProperties(obj) {
+  const result = {};
+  for (let key in obj) {
+    if (obj[key] !== null) {
+      result[key] = obj[key];
+    }
+  }
+  return result;
+}
+
+function getSortedPropertyNames(obj) {
+  return Object.keys(obj).sort();
+}
