@@ -66,8 +66,40 @@ input{
 a{
     color:#99abcd;
     text-decoration: none;
-
 }
 
+.error{
+    color: #c0392b;
+    font-size: 14px;
+    min-height: 1.2em;
 }
-
+label{
+    display: block;
+}
+.dashboard{
+    min-height: auto;
+    margin: 15vh auto;
+}
+.dashboard .info p{
+    margin-bottom: 8px;
+}
+.dashboard.admin{
+    width: 90%;
+    max-width: 700px;
+}
+.table-wrap{
+    overflow-x: auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #99abcd;
+}
+th{
+    background: #003366;
+    color: #fff;
+}
